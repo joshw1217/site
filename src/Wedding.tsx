@@ -1,13 +1,15 @@
 import React from "react"
-import Header from "./components/Header"
+import { Link, Outlet } from 'react-router-dom';
+
 
 
 const Wedding = () => {
 
     return (
-        <div>
-            <Header />
-            <p>Placeholder!</p>
+        <div className='bg-[#FFFFFF] w-full h-full'>
+            <Link to='address' className='flex justify-center items-center text-4xl'>
+            </Link>
+            <Outlet />
         </div>
     )
 }
