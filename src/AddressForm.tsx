@@ -83,7 +83,7 @@ const AddressForm = () => {
                 <form onSubmit={handleSubmit} className="w-full p-4 space-y-4">
                     <div className="flex justify-between items-end">
                         <div className="w-[45%]">
-                            <label className="block text-sm font-medium text-gray-700">First Name</label>
+                            <label className="block text-sm font-medium text-gray-700">First Name*</label>
                             <input
                                 type="text"
                                 className="w-full mt-1 p-2 border rounded-md focus:ring focus:ring-indigo-200"
@@ -94,7 +94,7 @@ const AddressForm = () => {
                             />
                         </div>
                         <div className="w-[45%]">
-                            <label className="block text-sm font-medium text-gray-700">Last Name</label>
+                            <label className="block text-sm font-medium text-gray-700">Last Name*</label>
                             <input
                                 type="text"
                                 className="w-full mt-1 p-2 border rounded-md focus:ring focus:ring-indigo-200"
@@ -119,7 +119,7 @@ const AddressForm = () => {
                         </div>
                         
                         <div className="w-[45%]">
-                            <label className="block text-sm font-medium text-gray-700">Phone Number</label>
+                            <label className="block text-sm font-medium text-gray-700">Phone Number*</label>
                             <input
                                 type="text"
                                 className="w-full mt-1 p-2 border rounded-md focus:ring focus:ring-indigo-200"
@@ -132,7 +132,7 @@ const AddressForm = () => {
                     </div>
                     <div className="flex justify-between items-end">
                         <div className="w-[45%]">
-                            <label className="block text-sm font-medium text-gray-700">Address Line 1</label>
+                            <label className="block text-sm font-medium text-gray-700">Address Line 1*</label>
                             <input
                                 type="text"
                                 className="w-full mt-1 p-2 border rounded-md focus:ring focus:ring-indigo-200"
@@ -155,7 +155,7 @@ const AddressForm = () => {
                     </div>
                     <div className="flex justify-between items-end">
                         <div className="w-[30%]">
-                            <label className="block text-sm font-medium text-gray-700">City</label>
+                            <label className="block text-sm font-medium text-gray-700">City*</label>
                             <input
                                 type="text"
                                 className="w-full mt-1 p-2 border rounded-md focus:ring focus:ring-indigo-200"
@@ -166,7 +166,7 @@ const AddressForm = () => {
                             />
                         </div>
                         <div className="w-[30%]">
-                            <label className="block text-sm font-medium text-gray-700">State</label>
+                            <label className="block text-sm font-medium text-gray-700">State*</label>
                             <input
                                 type="text"
                                 className="w-full mt-1 p-2 border rounded-md focus:ring focus:ring-indigo-200"
@@ -177,7 +177,7 @@ const AddressForm = () => {
                             />
                         </div>
                         <div className="w-[30%]">
-                            <label className="block text-sm font-medium text-gray-700">Zip Code</label>
+                            <label className="block text-sm font-medium text-gray-700">Zip Code*</label>
                             <input
                                 type="text"
                                 className="w-full mt-1 p-2 border rounded-md focus:ring focus:ring-indigo-200"
@@ -190,7 +190,7 @@ const AddressForm = () => {
                     </div>
                     <div className="flex justify-between items-end">
                         <div className="w-[45%]">
-                            <label className="block text-sm italic font-medium text-gray-700">Number of guests in your party</label>
+                            <label className="block text-sm italic font-medium text-gray-700">Number of guests in your party*</label>
                             <input
                                 type="number"
                                 className="w-full mt-1 p-2 border rounded-md focus:ring focus:ring-indigo-200"
