@@ -18,6 +18,7 @@ const AddressForm = () => {
         state: '',
         zip: '',
       })
+      const [isSubmitted, setIsSubmitted] = useState(false)
 
       const handleChange = (event) => {
         const { name, value } = event.target;
@@ -50,23 +51,9 @@ const AddressForm = () => {
           .insert(insertData)
     
         if (error) {
-          console.error('Error inserting data:', error.message)
+          console.error('Error inserting data:', error.message) // TODO: add more error handling
         } else {
-          console.log('Data successfully inserted:', data)
-          // Optionally reset the form
-          setFormData({
-            howToAddress: '',
-            firstName: '',
-            lastName:'',
-            phone:'',
-            numGuests:'',
-            guestsUnderTen:'',
-            addressLineOne:'',
-            addressLineTwo:'',
-            city: '',
-            state: '',
-            zip: '',
-          });
+          setIsSubmitted(true)
         }
       }
 
@@ -82,11 +69,18 @@ const AddressForm = () => {
         <div className="flex flex-col md:flex-row max-w-full p-2 md:p-6 bg-[#F8F4EC] shadow-md rounded-lg">
             {/* Form Section */}
             <div className="md:w-1/2 flex flex-col items-start">
+            
                 <h2 className="text-6xl font-semibold mb-4 font-quentin text-center">Join Us for Our Big Day!</h2>
                 <p className="mb-4">Don't worry—this isn't a formal RSVP. It's helping us get a sense of who'll be joining the celebration!</p>
-
+                {isSubmitted ? (
+                    <div className="bg-[#ffffff] p-6 rounded-lg shadow-md h-full text-center">
+                    <h2 className="text-2xl font-semibold mb-4">You're officially on our radar!</h2>
+                    <p>Thank you for filling out the form! We can't wait to share all the details about our big day with you.</p>
+                    <p>With Love,</p>
+                    <p>J + Y</p>
+                    </div> 
+                ) : (
                 <form onSubmit={handleSubmit} className="w-full p-4 space-y-4">
-                {/* Form fields go here as in your original code */}
                     <div className="flex justify-between items-end">
                         <div className="w-[45%]">
                             <label className="block text-sm font-medium text-gray-700">First Name</label>
@@ -228,7 +222,7 @@ const AddressForm = () => {
                     Submit
                 </button>
                 </form>
-                
+            )}
             </div>
             {/* Image Section */}
             <div className="md:w-1/2 p-4 flex items-center justify-center">
@@ -238,8 +232,9 @@ const AddressForm = () => {
                 className="w-full h-auto rounded-lg shadow-md"
                 />
             </div>
+
         </div>
-        
+
         </div>
     )
 }
