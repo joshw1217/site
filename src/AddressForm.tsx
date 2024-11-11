@@ -17,29 +17,42 @@ const AddressForm = () => {
         city: '',
         state: '',
         zip: '',
-      });
+      })
 
       const handleChange = (event) => {
         const { name, value } = event.target;
         setFormData((prevFormData) => ({
           ...prevFormData,
           [name]: value
-        }));
-      };
+        }))
+      }
 
       const handleSubmit = async (event) => {
-        event.preventDefault();
+        event.preventDefault()
     
         // Send data to Supabase
         const client = useAdminClient()
+        const insertData = {
+            first_name: formData.firstName,
+            last_name: formData.lastName,
+            how_to_address: formData.howToAddress,
+            phone: formData.phone,
+            address_line_one: formData.addressLineOne,
+            address_line_two: formData.addressLineTwo,
+            city: formData.city,
+            state: formData.state,
+            zip: formData.zip,
+            num_guests: formData.numGuests,
+            guests_under_ten: formData.guestsUnderTen
+        }
         const { data, error } = await client
           .from('guest_forms')  
-          .insert([formData]);
+          .insert(insertData)
     
         if (error) {
-          console.error('Error inserting data:', error.message);
+          console.error('Error inserting data:', error.message)
         } else {
-          console.log('Data successfully inserted:', data);
+          console.log('Data successfully inserted:', data)
           // Optionally reset the form
           setFormData({
             howToAddress: '',
@@ -55,14 +68,14 @@ const AddressForm = () => {
             zip: '',
           });
         }
-      };
+      }
 
       const isFormValid = () => {
         return Object.entries(formData).every(([key, value]) => {
-          if (key === 'addressLineTwo') return true;
-          return value.trim() !== '';
-        });
-      };
+          if (key === 'addressLineTwo' || key==='howToAddress') return true;
+          return value.trim() !== ''
+        })
+      }
 
     return (
         <div className="p-8 bg-gray-100 min-h-screen flex items-center justify-center overflow-hidden">
@@ -72,7 +85,7 @@ const AddressForm = () => {
                 <h2 className="text-6xl font-semibold mb-4 font-quentin text-center">Join Us for Our Big Day!</h2>
                 <p className="mb-4">Don't worry—this isn't a formal RSVP. It's helping us get a sense of who'll be joining the celebration!</p>
 
-                <form className="w-full p-4 space-y-4">
+                <form onSubmit={handleSubmit} className="w-full p-4 space-y-4">
                 {/* Form fields go here as in your original code */}
                     <div className="flex justify-between items-end">
                         <div className="w-[45%]">
@@ -108,7 +121,6 @@ const AddressForm = () => {
                                 name="howToAddress"
                                 value={formData.howToAddress}
                                 onChange={handleChange}
-                                required
                             />
                         </div>
                         
