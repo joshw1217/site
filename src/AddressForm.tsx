@@ -59,7 +59,7 @@ const AddressForm = () => {
 
       const isFormValid = () => {
         return Object.entries(formData).every(([key, value]) => {
-          if (key === 'addressLineTwo' || key==='howToAddress') return true;
+          if (key === 'addressLineTwo' || key==='howToAddress' || key==='guestsUnderTen') return true;
           return value.trim() !== ''
         })
       }
@@ -216,7 +216,7 @@ const AddressForm = () => {
                 {/* Submit Button */}
                 <button
                     type="submit"
-                    className="w-full py-2 px-4 bg-slate-800 text-white rounded-md enabled:hover:bg-indigo-700 transition"
+                    className="w-full py-2 px-4 bg-slate-400 enabled:bg-slate-800 text-white rounded-md enabled:hover:bg-indigo-700 transition"
                     disabled={!isFormValid()}
                 >
                     Submit
