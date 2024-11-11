@@ -13,7 +13,13 @@ export default {
         'dark-blue': '#1D2D44',
         'light-blue': '#748CAB',
         'pink': '#EF798A'
-      }
+      },
+      fontFamily: {
+        quentin: ['Quentin', 'sans-serif'],
+        santaCatalina: ['SantaCatalina', 'sans-serif'],
+        sofia: ['Sofia', 'sans-serif'],
+        weddingSignature: ['WeddingSignature', 'sans-serif'],
+      },
     },
   },
   plugins: [],

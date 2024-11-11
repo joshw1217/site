@@ -4,7 +4,7 @@ import League from './League'
 import Wedding from './Wedding'
 import Wow from './Wow'
 import Tile from './components/Tile'
-import AddressForm from './AdressForm'
+import AddressForm from './AddressForm'
 
 const Landing = () => {
   return (
