@@ -208,7 +208,6 @@ const AddressForm = () => {
                                 name="guestsUnderTen"
                                 value={formData.guestsUnderTen}
                                 onChange={handleChange}
-                                required
                             />
                         </div>
                     </div>
