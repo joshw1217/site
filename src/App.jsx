@@ -5,7 +5,7 @@ import Wedding from './Wedding'
 import Wow from './Wow'
 import Tile from './components/Tile'
 import AddressForm from './AddressForm'
-
+import Rsvp from './Rsvp'
 const Landing = () => {
   return (
     <div>
@@ -40,7 +40,9 @@ const App = () => {
           <Route path="/" element={<Landing />} />
           <Route path="/wedding" element={<Wedding />}>
             <Route path="address" element={<AddressForm />} />
+            
           </Route>
+          <Route path="/wedding/rsvp" element={<Rsvp />} />
           <Route path="/wow" element={<Wow />} />
           <Route path='/league' element={<League />} />
         </Routes>

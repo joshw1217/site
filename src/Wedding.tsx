@@ -5,7 +5,7 @@ const Wedding = () => {
     const navigate = useNavigate();
 
     const handleRSVPClick = () => {
-        navigate('/rsvp');
+        navigate('/wedding/rsvp');
     };
 
     const [timeLeft, setTimeLeft] = useState({
