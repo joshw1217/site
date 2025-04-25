@@ -68,7 +68,6 @@ const Wedding = () => {
         { question: "ARE CHILDREN WELCOME TO THE WEDDING?", answer: "WHILE WE ADORE YOUR LITTLE ONES, OUR WEDDING CEREMONY AND DINNER WILL BE AN ADULTS ONLY CELEBRATION. WE MORE THAN WELCOME YOUR LITTLE ONES BACK ONCE IT'S TIME FOR OUR RECEPTION." },
         { question: "WHERE SHOULD I PARK?", answer: "OUR WEDDING DAY WILL BE IN A RESIDENTIAL BACKYARD. PLEASE PARK AT THE CHURCH BUILDING LOCATED ACROSS FROM THE BACKYARD" },
         { question: "CAN I BRING A PLUS-ONE?", answer: "IF YOUR INVITATION INCLUDES A PLUS-ONE, WE'D BE DELIGHTED FOR THEM TO JOIN! KINDLY CONFIRM THEIR ATTENDANCE WHEN YOU RSVP SO WE CAN PLAN ACCORDINGLY." },
-        // Add more questions and answers as needed
     ];
 
     return (
@@ -205,15 +204,13 @@ const Wedding = () => {
                                 <div className="w-full md:w-[65%] flex flex-col justify-center text-center font-lemonMilk">
                                     <h2 className="text-4xl mb-4 text-center font-seasons font-bold">Reception</h2>
                                     <p className="text-2xl mb-4">7:30 PM</p>
+                                    <p className="text-2xl mb-4">OPEN TO ALL AGES!</p>
                                     <p className="text-2xl mb-4">BRING COMFY SHOES!</p>
                                     <p className="text-2xl">WATCH THE COUPLE CUT SOME CAKE </p>
                                     <p className="text-2xl">+</p>
                                     <p className="text-2xl mb-2">DANCE THE NIGHT AWAY WITH US</p>
-                                    <a href="https://g.co/kgs/Z7YPdiJ" target="_blank"><h1 className="bg-[#908277] w-[50%] md:w-[30%] text-white px-4 py-2 mb-8 hover:bg-opacity-90 transition-all duration-300 mx-auto whitespace-nowrap overflow-hidden text-ellipsis">DIRECTIONS</h1></a>
-                                    <h2 className="my-4 text-xl">following</h2>
-                                    <h2 className="text-[4rem] font-brittanySignature">cocktail hour</h2>
                                 </div>
-                                <div className="w-full md:w-[35%] flex items-start justify-center pt-12">
+                                <div className="w-full md:w-[35%] flex items-start justify-center pt-12 order-first md:order-last">
                                     <img src="/images/disco.svg" alt="bow" />
                                 </div>
                             </div>
@@ -229,8 +226,8 @@ const Wedding = () => {
             <section className="min-h-full bg-white">
                 <div className="container mx-auto px-8 md:px-16">
                     <div className="flex flex-col md:flex-row gap-8">
-                        <div className="flex flex-col md:flex-row mx-4 items-start">
-                            <div className="w-full md:w-[15%] flex items-start justify-center">
+                        <div className="flex flex-col md:flex-row mx-4 items-center md:items-start">
+                            <div className="w-[30%] md:w-[15%] flex items-center justify-center">
                                 <img src="/images/ribbon.svg" alt="bow" />
                             </div>
                             <div className="w-full md:w-[65%] flex flex-col justify-center text-center font-lemonMilk">
@@ -251,10 +248,10 @@ const Wedding = () => {
                         {/* Registry List */}
                         <div className="w-full">
                             <h2 className="text-[3rem] mb-4 text-center font-seasons font-bold">Registry</h2>
-                            <p className="text-2xl mb-12 text-center leading-relaxed">Your presence is the greatest gift of all. However, for those who wish to contribute items for our new home or to our honeymoon fund, we are registered at the following places</p>
+                            <p className="text-2xl mb-12 text-center leading-relaxed">If you’d like to help us start our next chapter, we’ve put together a registry with a few things we love and need. We’re so grateful for your love and support.</p>
                             <a href="https://www.amazon.com/wedding/share/yamilikesjosh" target="_blank"><h1 className="bg-[#908277] w-[40%] md:w-[20%] text-center text-white px-4 py-2 mb-8 hover:bg-opacity-90 transition-all duration-300 mx-auto">AMAZON</h1></a>
-                            <a href="https://www.amazon.com/wedding/share/yamilikesjosh" target="_blank"><h1 className="bg-[#908277] w-[40%] md:w-[20%] text-center text-white px-4 py-2 mb-8 hover:bg-opacity-90 transition-all duration-300 mx-auto">IKEA</h1></a>
-                            <a href="https://venmo.com/u/yamidiaz" target="_blank"><h1 className="bg-[#908277] w-[70%] md:w-[20%] text-center text-white px-4 py-2 mb-8 hover:bg-opacity-90 transition-all duration-300 mx-auto">VENMO@YAMIDIAZ</h1></a>
+                            <a href="https://www.target.com/gift-registry/gift/joshlikesyami" target="_blank"><h1 className="bg-[#908277] w-[40%] md:w-[20%] text-center text-white px-4 py-2 mb-8 hover:bg-opacity-90 transition-all duration-300 mx-auto">TARGET</h1></a>
+                            <a href="https://venmo.com/u/yamidiaz" target="_blank"><h1 className="bg-[#908277] w-[70%] md:w-[20%] text-center text-white px-4 py-2 mb-8 hover:bg-opacity-90 transition-all duration-300 mx-auto">VENMO @YAMIDIAZ</h1></a>
 
                         </div>
                         {/* FAQ */}
@@ -269,7 +266,7 @@ const Wedding = () => {
                                         <span className="text-2xl font-bold">{openQuestions.includes(index) ? '-' : '+'}</span>
                                     </div>
                                     {openQuestions.includes(index) && (
-                                        <p className="text-xl mt-2">{faq.answer}</p>
+                                        <p className="text-xl mt-2 text-[#625d58]">{faq.answer}</p>
                                     )}
                                 </div>
                             ))}
