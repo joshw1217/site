@@ -143,30 +143,6 @@ const Wedding = () => {
                 </div>
             </div>
 
-            {/* Schedule Section */}
-            {/* <section className="min-h-full bg-white py-20">
-                <div className="container mx-auto px-8">
-                    <h2 className="text-[4rem] mb-12 text-center font-quentin">Schedule</h2>
-                    <div className="p-8">
-                        <div className="flex flex-col md:flex-row gap-8">
-                            <div className="w-full md:w-1/2 flex flex-col justify-center">
-                                <h3 className="text-3xl mb-4 text-center font-santaCatalina">Wedding Ceremony</h3>
-                                <p className="text-2xl mb-4">4:30 - Ceremony</p>
-                                <p className="text-2xl mb-4">5:30 - Cocktail Hour</p>
-                                <p className="text-2xl mb-4">6:30 - Dinner</p>
-                                <h3 className="text-3xl mb-4 text-center font-santaCatalina">Reception</h3>
-                                <p className="text-2xl mb-8">7:30 - Doors open</p>
-                                <p className="text-2xl mb-8">8:00 - Dancing, Gelato Bar, and more!</p>
-                                <p className="text-2xl mb-8">9:30 - Evening ends</p>
-                            </div>
-                            <div className="w-full md:w-1/2 aspect-video bg-gray-200">
-                                <img src="/images/IMG_4345.jpg" alt="Venue" className="w-full h-full object-cover" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> */}
-
             {/* Location Section */}
             <section className="min-h-full bg-white pt-20 pb-24">
                 <div className="container mx-auto px-4 md:px-16">
@@ -180,12 +156,12 @@ const Wedding = () => {
                                 <div className="w-full md:w-[65%] flex flex-col justify-center text-center font-lemonMilk">
                                     <p className="text-2xl mb-4 font-extralight">June 13 2025</p>
                                     <h2 className="text-4xl mb-4 text-center font-seasons font-bold">CEREMONY</h2>
-                                    <p className="text-2xl mb-4">4:30 PM</p>
-                                    <p className="text-2xl mb-4">PLEASE ARRIVE 15 MINUTES PRIOR </p>
+                                    <p className="text-2xl mb-4">5:00 PM</p>
+                                    <p className="text-2xl mb-4">THE CEREMONY WILL BEGIN AT 5:30 PM </p>
                                     <p className="text-2xl mb-8">FORMAL ATTIRE</p>
                                     <p className="text-2xl mb-2">595 S 400 E</p>
                                     <p className="text-2xl mb-2">OREM UT, 84097</p>
-                                    <a href="https://g.co/kgs/Z7YPdiJ" target="_blank"><h1 className="bg-[#908277] w-[30%] text-white px-4 py-2 mb-8 hover:bg-opacity-90 transition-all duration-300 mx-auto">DIRECTIONS</h1></a>
+                                    <a href="https://g.co/kgs/Z7YPdiJ" target="_blank"><h1 className="bg-[#908277] w-[50%] md:w-[30%] text-white px-4 py-2 mb-8 hover:bg-opacity-90 transition-all duration-300 mx-auto whitespace-nowrap overflow-hidden text-ellipsis">DIRECTIONS</h1></a>
                                     <h2 className="my-4 text-xl">following</h2>
                                     <h2 className="text-[4rem] font-brittanySignature">cocktail hour</h2>
                                 </div>
@@ -205,13 +181,13 @@ const Wedding = () => {
             <section className="min-h-full bg-white">
                 <div className="container mx-auto px-8 md:px-16">
                     <div className="flex flex-col md:flex-row gap-8">
-                        <div className="flex flex-col md:flex-row mx-4 items-start">
-                            <div className="w-full md:w-[15%] flex items-start justify-center">
+                        <div className="flex flex-col pl-4 md:pl-0 pb-4 md:pb-0 md:flex-row mx-4 items-center md:items-start">
+                            <div className="w-[30%] md:w-[15%] flex items-center md:items-start justify-center">
                                 <img src="/images/candle.svg" alt="bow" />
                             </div>
                             <div className="w-full md:w-[65%] flex flex-col justify-center text-center font-lemonMilk">
                                 <h1 className="text-[4rem] font-seasons">Dinner</h1>
-                                <p className="text-xl mb-4">6:45 PM</p>
+                                <p className="text-xl mb-4">6:30 PM</p>
                             </div>
                         </div>
                         <div className="w-full md:w-[45%] aspect-video bg-gray-200">
@@ -228,12 +204,12 @@ const Wedding = () => {
                             <div className="flex flex-col md:flex-row">
                                 <div className="w-full md:w-[65%] flex flex-col justify-center text-center font-lemonMilk">
                                     <h2 className="text-4xl mb-4 text-center font-seasons font-bold">Reception</h2>
-                                    <p className="text-2xl mb-4">8:00 PM</p>
+                                    <p className="text-2xl mb-4">7:30 PM</p>
                                     <p className="text-2xl mb-4">BRING COMFY SHOES!</p>
                                     <p className="text-2xl">WATCH THE COUPLE CUT SOME CAKE </p>
                                     <p className="text-2xl">+</p>
                                     <p className="text-2xl mb-2">DANCE THE NIGHT AWAY WITH US</p>
-                                    <a href="https://g.co/kgs/Z7YPdiJ" target="_blank"><h1 className="bg-[#908277] w-[30%] text-white px-4 py-2 mb-8 hover:bg-opacity-90 transition-all duration-300 mx-auto">DIRECTIONS</h1></a>
+                                    <a href="https://g.co/kgs/Z7YPdiJ" target="_blank"><h1 className="bg-[#908277] w-[50%] md:w-[30%] text-white px-4 py-2 mb-8 hover:bg-opacity-90 transition-all duration-300 mx-auto whitespace-nowrap overflow-hidden text-ellipsis">DIRECTIONS</h1></a>
                                     <h2 className="my-4 text-xl">following</h2>
                                     <h2 className="text-[4rem] font-brittanySignature">cocktail hour</h2>
                                 </div>
