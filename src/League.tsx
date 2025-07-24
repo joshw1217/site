@@ -7,7 +7,7 @@ const League = () => {
     return (
         <div>
             <Header />
-            <p>Placeholder!</p>
+            <p className="text-4xl font-bold text-center mt-20">Placeholder!</p>
         </div>
     )
 }

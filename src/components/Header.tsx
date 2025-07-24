@@ -13,7 +13,7 @@ const Header = () => {
         {/* Centered Links */}
         <div className="flex justify-between w-2/4 mx-12 space-x-8">
           <Link to="/wedding" className="text-gray-800 hover:text-light-blue font-medium">
-            Our wedding
+            Our Wedding
           </Link>
           <Link to="/wow" className="text-gray-800 hover:text-light-blue font-medium">
             WoW Guild
